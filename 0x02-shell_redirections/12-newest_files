@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -tp | grep -v /$
+ls -tp | grep -i "^[1234567890]"
