@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# echoes Best School 10 times
+# but on 9 iterator prints sometimes else
+
+count=0
+while [ $count -le 10 ];
+do
+	if [ $count -eq 9 ];
+	then
+		echo "Best School"
+		echo "Hi"
+	else
+		echo "Best School"
+	fi
+	((count++))
+done
