@@ -6,12 +6,12 @@ while [ $count -le 10 ]
 do
 	if [ $count -eq 4 ]
 	then
-		echo "bad luck"
+		printf "bad luck\n"
 	elif [ $count -eq 8 ]
 	then
-		echo "good luck"
+		printf "good luck\n"
 	else
-		echo "Best School"
+		printf "Best School\n"
 	fi
 	((count++))
 done
