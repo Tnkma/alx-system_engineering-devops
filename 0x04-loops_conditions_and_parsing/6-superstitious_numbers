@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# prints Best School using case
+
+count=1
+while [ $count -le 20 ]
+do
+	case $count in
+
+		4)
+			echo $count
+			echo "bad luck from China"
+			;;	
+		9)
+			echo $count
+			echo "bad luck from Japen"
+			;;
+		17)
+			echo $count
+			echo "bad luck from Italy"
+			;;
+		*)
+			echo $count
+			;;
+	esac
+	((count++))
+done
