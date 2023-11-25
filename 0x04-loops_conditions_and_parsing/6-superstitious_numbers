@@ -7,19 +7,19 @@ do
 	case $count in
 
 		4)
-			echo $count
-			echo "bad luck from China"
+			printf "%d\n" $count
+			printf "bad luck from China\n"
 			;;	
 		9)
-			echo $count
-			echo "bad luck from Japen"
+			printf "%d\n" $count
+			printf "bad luck from Japan\n"
 			;;
 		17)
-			echo $count
-			echo "bad luck from Italy"
+			printf "%d\n" $count
+			printf "bad luck from Italy\n"
 			;;
 		*)
-			echo $count
+			printf "%d\n" $count
 			;;
 	esac
 	((count++))
