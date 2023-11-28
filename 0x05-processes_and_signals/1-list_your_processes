@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Display all runing process
+
+ps -e --forest -o user,pid,ppid,%cpu,%mem,vsz,rss,tty,command
