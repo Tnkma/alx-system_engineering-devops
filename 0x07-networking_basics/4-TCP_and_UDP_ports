@@ -1,0 +1,10 @@
+#!/bin/env bash
+# Display header
+echo "Active Internet connections (only servers)"
+echo "Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name"
+netstat -tulnep | awk 'NR>2 {print}'
+# Display header for UNIX domain sockets
+echo -e "\nActive UNIX domain sockets (only servers)"
+echo "Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path"
+# Use netstat to get information about UNIX domain sockets
+netstat -x | awk 'NR>2 {print}'
