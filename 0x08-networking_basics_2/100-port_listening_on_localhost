@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# listens to the localhost 98
+sudo nc -l localhost 98
