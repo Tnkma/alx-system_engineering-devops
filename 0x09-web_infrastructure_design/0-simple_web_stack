@@ -1,0 +1,19 @@
+What is a server
+A server is computer or software that provides services, data to other computers known as clients
+What is the role of the domain name
+A domain name plays a crucial role by identifying and locating informations on the internet
+What type of DNS record www is in www.foobar.com
+A CNAME Record
+What is the role of the web server
+A web server responds to http requests by looking for the relevant information and sending it back to the browser.
+What is the role of the application server
+An application server gets Data from the database and fills in the request by the webserver
+What is the role of the database
+Stores the information of the User
+What is the server using to communicate with the computer of the user requesting the website
+The server communicates through computers using the ip address
+SPOF
+
+Downtime when maintenance needed (like deploying new code web server needs to be restarted)
+Cannot scale if too much incoming traffic
+
