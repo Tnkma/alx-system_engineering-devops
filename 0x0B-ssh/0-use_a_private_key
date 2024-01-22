@@ -2,4 +2,8 @@
 # Use ssh single character flag to connect to your server using the private key
 # key ~/.ssh/school with the user ubuntu.
 # Username: ubuntu
+<<<<<<< HEAD
 ssh -i ~/.ssh/school ubuntu@54fb79756411.115532cb.alx-cod.online
+=======
+ssh -i ~/.ssh/school ubuntu@eadb1d0dfb7c.e93e7bb8.alx-cod.online
+>>>>>>> f563623f17bd822d61cf73a1e2b9f0d8c80104e4
