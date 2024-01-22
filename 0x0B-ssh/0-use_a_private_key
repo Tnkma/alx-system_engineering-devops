@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Use ssh single character flag to connect to your server using the private key
+# key ~/.ssh/school with the user ubuntu.
+# Username: ubuntu
+ssh -i ~/.ssh/school ubuntu@KsKfGxTYIUVJOLCNTx12NmCzxN39PMYSY68DNRTp0pQ tnkm_a@Godswill
