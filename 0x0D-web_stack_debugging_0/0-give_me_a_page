@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Creating a page for docker
-service apache2 start
-echo "Hello Holberton" > /var/www/html/index.html
+# Creating a page inside a docker
+# Using Apache web server
+/etc/init.d/apache2 start
