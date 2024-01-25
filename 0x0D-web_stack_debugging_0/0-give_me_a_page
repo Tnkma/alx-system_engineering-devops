@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Creating a page for docker
+echo "Hello Holberton" > /var/www/html/index.html
