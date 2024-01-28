@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Install nginx on the web server
+# Ngix should be listening on port 80
+# When queryed with curl, it return a page 'helloworld'
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+echo 'Hello World' | sudo tee /var/www/html/index.html
+sudo service nginx start
