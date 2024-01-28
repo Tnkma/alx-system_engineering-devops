@@ -1,7 +1,24 @@
 #!/usr/bin/env bash
 # Creating a page inside a docker
 # Using Apache web server
+
+# Start Apache in the background
 service apache2 start
-apache2 is running
+
+# Wait for Apache to fully start (you may need to adjust the sleep duration)
+sleep 2
+
+# Check if Apache is running
+if service apache2 status | grep -q "apache2 is running"; then
+  echo "apache2 is running"
+else
+  echo "Error: Apache is not running"
+  exit 1
+fi
+
+# Create the Hello Holberton page
 echo "Hello Holberton" > /var/www/html/index.html
+
+# Stop Apache
 service apache2 stop
+
