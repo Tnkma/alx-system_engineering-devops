@@ -2,5 +2,6 @@
 # Creating a page inside a docker
 # Using Apache web server
 service apache2 start
+apache2 is running
 echo "Hello Holberton" > /var/www/html/index.html
 service apache2 stop
