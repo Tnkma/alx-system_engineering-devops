@@ -7,10 +7,7 @@ if [ -f "$config_file" ]; then
   # add the configuration file
 
   printf %s "server {
-
-      server {
-        add_header X-Served-By $hostname;
-      }
+    add_header X-Served-By $hostname;
   }" >> "$config_file"
   # Test Nginx configuration
   sudo nginx -t
