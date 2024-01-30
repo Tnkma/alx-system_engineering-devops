@@ -4,7 +4,6 @@
 
 config_file="/etc/nginx/sites-available/default"
 if [ -f "$config_file" ]; then
-  sudo rm -f "/etc/nginx/sites-enabled/default"
   # add the configuration file
 
   printf %s "server {
@@ -13,10 +12,6 @@ if [ -f "$config_file" ]; then
         add_header X-Served-By $hostname;
       }
   }" >> "$config_file"
-
-  # Create a symbolic link
-  sudo ln -s "$config_file" "/etc/nginx/sites-enabled/"
-
   # Test Nginx configuration
   sudo nginx -t
 
