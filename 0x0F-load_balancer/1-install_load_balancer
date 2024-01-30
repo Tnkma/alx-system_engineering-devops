@@ -35,6 +35,9 @@ frontend http-in
     timeout client 30000
     bind 0:80
     default_backend servers
+backend servers
+    timeout connect 3000
+    timeout server 30000
     balance roundrobin
     server 296451-web-01 100.27.14.120 check
     server 296451-web-02 54.174.217.169 check
