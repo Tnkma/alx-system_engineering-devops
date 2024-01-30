@@ -4,12 +4,15 @@
 
 config_file="/etc/nginx/sites-available/default"
 if [ -f "$config_file" ]; then
+  sudo rm -f "/etc/nginx/sites-enabled/default"
   # add the configuration file
 
   printf %s "server {
 
       location {
-          add_header X-Served-By $hostname;
+        listen 80;
+        listen [::]:80 default_server;
+        add_header X-Served-By $hostname;
       }
   }" > "$config_file"
 
