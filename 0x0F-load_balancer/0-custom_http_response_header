@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# A script that configure Nginx so that
+# its http response contains a custom header on web-01 and web -02
+
+config_file="/etc/nginx/nginx.conf"
+echo "Check if the file exist first"
+if [ -f "$config_file" ]; then
+  echo "file found for u"
+  # add the configuration file
+
+  echo "server {
+      listen 80 default_server;
+      server_name _;
+
+      location / {
+          # add the file
+          add_header X-Served-By \$HOSTNAME;
+      }
+  }" | sudo tee -a "$config_file" > /dev/null
+
+  # Create a symbolic link
+  sudo ln -s "$config_file" "/etc/nginx/sites-enabled/"
+
+  # Test Nginx configuration
+  sudo nginx -t
+
+  # Relaod Nginx
+  sudo service nginx reload
+else
+   echo "ERROR for u"
+fi
