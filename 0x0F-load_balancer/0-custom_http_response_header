@@ -9,12 +9,10 @@ if [ -f "$config_file" ]; then
 
   printf %s "server {
 
-      location {
-        listen 80;
-        listen [::]:80 default_server;
+      server {
         add_header X-Served-By $hostname;
       }
-  }" > "$config_file"
+  }" >> "$config_file"
 
   # Create a symbolic link
   sudo ln -s "$config_file" "/etc/nginx/sites-enabled/"
@@ -24,5 +22,4 @@ if [ -f "$config_file" ]; then
 
   # Relaod Nginx
   sudo service nginx reload
-
 fi
