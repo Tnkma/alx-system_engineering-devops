@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-<<<<<<< HEAD
 # configures a server to listening on port 80
-=======
-# configures a server to listening on port 80 of all servers active IPv4 IPs
->>>>>>> 715a6bf2b040c05d7877515a721e8dfedd42e41e
 sudo sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
 sudo service nginx restart
 echo "" | sudo dd status=none of=/run/nginx.pidi
