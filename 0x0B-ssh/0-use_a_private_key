@@ -3,6 +3,7 @@
 # key ~/.ssh/school with the user ubuntu.
 # Username: ubuntu
 # Server details
+
 server_ip="54.237.217.147"
 user="ubuntu"
 private_key="~/.ssh/school"
