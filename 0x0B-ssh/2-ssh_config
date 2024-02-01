@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# SSH config without password
+#
+Host web-01
+  Hostname 54.237.217.147
+  User ubuntu
+  PasswordAuthentication no
+  IdentifyFile ~/.ssh/school
