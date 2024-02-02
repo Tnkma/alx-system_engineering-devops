@@ -7,7 +7,7 @@ print_domain_and_subdomain () {
 
 if [ "$#" -eq 2 ]
 then
-    print_domain_and_subdomains "$2.$1" "$2"
+    print_domain_and_subdomain "$2.$1" "$2"
 else
     print_domain_and_subdomain "www.$1" "www"
     print_domain_and_subdomain "lb-01.$1" "lb-01"
