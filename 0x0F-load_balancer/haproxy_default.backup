@@ -1,0 +1,16 @@
+
+defaults
+  mode http
+  timeout client 15s
+  timeout connect 10s
+  timeout server 15s
+  timeout http-request 10s
+
+frontend myservers_frontend
+    bind *:80
+    default_backend myservers_backend
+
+backend myservers_backend
+    balance roundrobin
+    server 296451-web-01 100.27.14.120:80 check
+    server 296451-web-02 54.174.217.169:80 check

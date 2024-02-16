@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Runs the software as another user
+
+# Assign the commandline argument to username
+username=$1
+
+# Run the commsnd to replace the user
+sudo -u "$username" whoami

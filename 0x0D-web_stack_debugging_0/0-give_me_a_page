@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Creating a page inside a docker
 # Using Apache web server
+
+# Start Apache in the background
 service apache2 start
-echo "Hello Holberton" > /var/www/html/index.html
-service apache2 stop
