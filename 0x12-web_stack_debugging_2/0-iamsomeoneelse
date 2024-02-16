@@ -5,4 +5,4 @@
 username=$1
 
 # Run the commsnd to replace the user
-sudo -u $username whoami
+sudo -u "$username" whoami
