@@ -11,8 +11,8 @@ def list_progress(employee_id):
     returns the completed and total list
     """
 
-    todo_url = f'https://jsonplaceholder.typicode.com/users/{employee_id}/todos'
-    response = requests.get(todo_url)
+    tod_url = f'https://jsonplaceholder.typicode.com/users/{employee_id}/todos'
+    response = requests.get(tod_url)
     todo_list = response.json()
 
     name_url = f'https://jsonplaceholder.typicode.com/users/{employee_id}'
