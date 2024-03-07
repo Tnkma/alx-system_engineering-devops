@@ -1,8 +1,9 @@
 import requests
 
+
 def top_ten(subreddit):
     """ Requests the API and print None if subreddit is not valid """
-    headers = {'User-Agent': 'Mozilla/5.0'}
+    headers = {'User-Agent': 'Lizzes'}
     url = 'https://www.reddit.com/r/{}/hot/.json?limit=10'.format(subreddit)
     response = requests.get(url, headers=headers, allow_redirects=False)
 
