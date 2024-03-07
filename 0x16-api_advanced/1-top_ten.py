@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+""" Querys the REDDIT api for hot posts """
 import requests
 
 
